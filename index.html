@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>weather app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="preload" href="./assets/background.svg" as="image" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/style.css"
+    />
+  </head>
+  <body>
+    <section class="main" id="main">
+      <!-- top section -->
+
+      <div class="top-section">
+        <div class="top-section-cities">
+          <img
+            src="./assets/london.svg"
+            alt="city"
+            class="top-section-city-img"
+            id="top-sec-city-img"
+          />
+          <input
+            list="city"
+            value="London"
+            class="select"
+            id="select"
+            name="city"
+            autocomplete="off"
+          />
+          <datalist id="city"> </datalist>
+          <div class="top-section-date-time">
+            <span id="time" class="time">10:10:44</span
+            ><img
+              src="./assets/amState.svg"
+              id="top-sec-AmOrPm"
+              class="top-section-ampm"
+              alt="AMPM"
+            /><br />
+            <span id="date" class="date">01-Mar-2022</span>
+          </div>
+        </div>
+        <div class="top-middle-section">
+          <div class="top-middle-section-box-1-div-1">
+            <p class="top-middle-section-box-1">
+              Temp<span>°C</span><br />
+              <strong id="top-sec-temp">25<span>°C</span></strong>
+            </p>
+          </div>
+          <div class="border-1"></div>
+          <div>
+            <p class="top-middle-section-box-2">
+              Humidity<br />
+              <strong id="top-sec-humidity">26</strong>%
+            </p>
+          </div>
+          <div class="top-middle-section-box-3-div-3">
+            <p class="top-middle-section-box-3">
+              Temp<span>°F</span><br />
+              <strong id="top-sec-fah">26<span>°F</span></strong>
+            </p>
+          </div>
+          <div class="border-2"></div>
+          <div>
+            <p class="top-middle-section-box-4">
+              Precipitation<br />
+              <strong id="top-sec-prep">0</strong>%
+            </p>
+          </div>
+        </div>
+        <div class="top-last-section">
+          <div class="top-last-section-first">
+            <div>
+              <p id="now">NOW</p>
+              <br />
+            </div>
+            <div>
+              <p id="hour-1" class="hours">11 AM</p>
+              <br />
+            </div>
+            <div>
+              <p id="hour-2" class="hours">12 PM</p>
+              <br />
+            </div>
+            <div>
+              <p id="hour-3" class="hours">1 PM</p>
+              <br />
+            </div>
+            <div>
+              <p id="hour-4" class="hours">2 PM</p>
+              <br />
+            </div>
+            <div>
+              <p id="hour-5" class="hours">3 PM</p>
+              <br />
+            </div>
+          </div>
+          <div class="top-last-section-second">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="top-last-section-third">
+            <div>
+              <img src="./assets/cloudyIcon.svg" id="icon1" alt="" />
+              <p id="top-last-sec-1">7</p>
+            </div>
+            <div>
+              <img
+                src="./assets/rainyIcon.svg"
+                id="top-last-img-2"
+                class="icons-1"
+                alt="rainyIcon"
+              />
+              <p class="top-last-sec-temp" id="temp-1">7</p>
+            </div>
+            <div>
+              <img
+                src="./assets/windyIcon.svg"
+                id="top-last-img-3"
+                class="icons-1"
+                alt="windyIcon"
+              />
+              <p class="top-last-sec-temp" id="temp-2">7</p>
+            </div>
+            <div>
+              <img
+                src="./assets/rainyIcon.svg"
+                id="top-last-img-4"
+                class="icons-1"
+                alt="rainyIcon"
+              />
+              <p class="top-last-sec-temp" id="temp-3">7</p>
+            </div>
+            <div>
+              <img
+                src="./assets/windyIcon.svg"
+                id="top-last-img-5"
+                class="icons-1"
+                alt="windyIcon"
+              />
+              <p class="top-last-sec-temp" id="temp-4">7</p>
+            </div>
+            <div>
+              <img
+                src="./assets/rainyIcon.svg"
+                id="top-last-img-6"
+                class="icons-1"
+                alt="rainyIcon"
+              />
+              <p class="top-last-sec-temp" id="temp-5">7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- middle section -->
+      <div class="middle-section">
+        <div class="middle-section-top">
+          <div class="mid-sec-top-city">
+            <span class="middle-top">Top cities around the world</span>
+          </div>
+          <figure>
+            <button
+              id="sunny-btn"
+              class="btn"
+              title="filter based on temperature"
+            >
+              <img
+                src="./assets/sunnyIcon.svg"
+                alt="sunnyIcon"
+                id="sunny"
+                class="middle-sunny"
+              />
+            </button>
+            <button
+              id="snowy-btn"
+              class="btn"
+              title="filter based on Precipitation"
+            >
+              <img
+                src="./assets/snowflakeIcon.svg"
+                alt="snowflakeIcon"
+                id="snow"
+                class="middle-snowflake"
+              />
+            </button>
+            <button id="windy-btn" class="btn" title="filter based on Humidity">
+              <img
+                src="./assets/rainyIconBlack.svg"
+                alt="rainyIconBlack"
+                id="wind"
+                class="middle-rainy"
+              />
+            </button>
+          </figure>
+          <div>
+            <form onsubmit="return false">
+              <label for="num" class="middle-display"> Display Top </label>
+              <input
+                type="number"
+                value="4"
+                name="num"
+                id="num"
+                class="middle-section-no-of-city"
+                min="3"
+                max="10"
+                required
+              />
+            </form>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="mid-btn">
+            <button id="left-scroll">
+              <img src="./assets/backwardArrow.svg" />
+            </button>
+          </div>
+          <div class="middle-section-bottom" id="middle-section-bottom"></div>
+          <div class="mid-btn">
+            <button id="right-scroll">
+              <img src="./assets/forwardArrow.svg" alt="forwardArrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom-section -->
+      <div class="lower-content">
+        <div class="lower-content-header">
+          <span class="lower-heading"
+            >Cities across continents at a Glance</span
+          >
+          <div class="temp-lower bottom-sort">
+            <span class="lower-temperature">Temperature</span
+            ><button
+              id="lower-btn-2"
+              class="btn"
+              title="sorted Ascendingly by temperature"
+            >
+              <img
+                src="./assets/arrowUp.svg"
+                alt="icons"
+                class="up"
+                id="by-temperature"
+                name="up-2"
+              />
+            </button>
+          </div>
+          <div class="conti bottom-sort">
+            <span class="lower-continent">Continent Name </span
+            ><button
+              id="lower-btn-1"
+              class="btn"
+              title="sorted Descendingly by continent name"
+            >
+              <img
+                src="./assets/arrowDown.svg"
+                alt="icons"
+                class="down"
+                id="by-continent"
+                name="down-1"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="lower-content-container" id="lower-content-container"></div>
+      </div>
+    </section>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/apiCall.js"></script>
+    <script src="./scripts/topSection.js"></script>
+    <script src="./scripts/middleSection.js"></script>
+    <script src="./scripts/bottomSection.js"></script>
+  </body>
+</html>

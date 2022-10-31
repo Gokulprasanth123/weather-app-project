@@ -1,0 +1,183 @@
+.bottom-sort {
+  float: right;
+}
+
+.lower-content {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.lower-content-container {
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+  row-gap: 20px;
+  column-gap: 40px;
+}
+
+.lower-content-container > div {
+  background-color: var(--bg-grey-tile);
+  height: 60px;
+}
+
+.lower-content-header {
+  width: auto;
+}
+
+.lower-heading {
+  font-size: 2em;
+}
+
+.lower-continent {
+  font-size: 1.5em;
+}
+
+.lower-temperature {
+  font-size: 1.5em;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.up,
+.down {
+  height: 30px;
+  width: 40px;
+}
+
+.grid {
+  font-size: 1em;
+  padding: 10px;
+  transition: 1s ease-in;
+}
+
+.grid-box-1 {
+  float: right;
+  position: relative;
+  left: 0%;
+}
+
+.grid-box-1 > strong {
+  margin-left: 2px;
+}
+
+.grid-city-1 {
+  color: var(--bright-yellow-text);
+  font-size: 20px;
+}
+
+.grid:hover {
+  border: 1px solid var(--bright-yellow-text);
+  transform: scale(1, 1.03);
+}
+
+.grid-left {
+  float: right;
+  font-size: 18px;
+}
+
+.grid-hum {
+  display: inline;
+  font-size: 13px;
+}
+
+.grid-img {
+  width: 14px;
+}
+
+.grid-center {
+  float: right;
+  font-size: 18px;
+}
+
+.grid-right {
+  float: right;
+  font-size: 18px;
+}
+
+@media all and (max-width: 786px) {
+  .lower-heading {
+    font-size: 1em;
+  }
+
+  .lower-continent {
+    font-size: 1em;
+  }
+
+  .lower-temperature {
+    font-size: 1em;
+  }
+
+  .up,
+  .down {
+    width: 30px;
+    height: 20px;
+  }
+}
+
+@media all and (max-width: 1160px) {
+  .lower-heading {
+    font-size: 1.5em;
+  }
+
+  .lower-continent {
+    font-size: 1em;
+  }
+
+  .lower-temperature {
+    font-size: 1em;
+  }
+
+  .up,
+  .down {
+    width: 30px;
+    height: 20px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .grid > strong {
+    font-size: 16px;
+  }
+  .grid-img {
+    width: 12px;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .grid > strong {
+    font-size: 14px;
+  }
+
+  .lower-heading {
+    font-size: 1em;
+  }
+
+  .lower-continent {
+    font-size: 0.8em;
+  }
+
+  .lower-temperature {
+    font-size: 0.8em;
+  }
+
+  .up,
+  .down {
+    width: 30px;
+    height: 20px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid > strong {
+    font-size: 10px;
+  }
+  .grid-hum {
+    font-size: 10px;
+  }
+}

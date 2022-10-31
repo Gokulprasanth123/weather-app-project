@@ -1,0 +1,42 @@
+@import "theme.css";
+@import "topSection.css";
+@import "middleSection.css";
+@import "bottomSection.css";
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url("../assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: 300%;
+}
+
+.main {
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.main-container-hidden {
+  display: none;
+}
+
+.main-container-visible {
+  display: block;
+}
+
+.loading-visible {
+  background-color: var(--primary-black);
+  background-image: url("../assets/preloader.gif");
+  background-size: 100vw 100vh;
+}
+
+.loading-hidden {
+  background-image: url("../assets/background.svg");
+  background-size: 300%;
+}
